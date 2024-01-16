@@ -18,7 +18,6 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddAutoMapper(typeof(UserMapper));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
-
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
